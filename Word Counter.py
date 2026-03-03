@@ -1,4 +1,4 @@
-def word_counter(filename):#
+def word_counter(filename):
  try:#Avoid getting bugs for files not present
      with  open(filename +'.txt','r') as f:
       content = f.read().split()
@@ -8,7 +8,7 @@ def word_counter(filename):#
    print(e)
 
 
-filename = input('Filename: ')
+filename = input('Filename: ') 
 print(word_counter(filename))
 
 
